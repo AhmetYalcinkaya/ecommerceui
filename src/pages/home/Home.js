@@ -1,17 +1,20 @@
 import React from "react";
 import Announcement from "../../components/announcment/Announcment";
-// import Categories from "../components/Categories";
+import Category from "../../components/categories/Category";
 // import Footer from "../components/Footer";
 import Navbar from "../../components/navbar/Navbar";
+import ProductList from "../../components/productlist/ProductList";
+import Slider from "../../components/slider/Slider";
 // import Newsletter from "../components/Newsletter";
-// import Products from "../components/Products";
-// import Slider from "../components/Slider";
 
 const Home = () => {
   return (
     <div>
       <Announcement />
       <Navbar />
+      <Slider />
+      <Category />
+      <ProductList />
     </div>
   );
 };
