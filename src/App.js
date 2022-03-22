@@ -8,6 +8,9 @@ import Newsletter from "./components/newsletter/Newsletter";
 import Footer from "./components/footer/Footer";
 import ProductList from "./components/productlist/ProductList";
 import SingleProduct from "./pages/product/SingleProduct";
+import Register from "./pages/register/Register";
+import Login from "./pages/login/Login";
+import Cart from "./pages/cart/Cart";
 function App() {
   return (
     <>
@@ -17,6 +20,9 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/singleproduct" element={<SingleProduct />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
       <ProductList />
       <Newsletter />

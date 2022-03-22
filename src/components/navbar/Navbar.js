@@ -1,5 +1,8 @@
 import "./navbar.css";
+import { Link } from "react-router-dom";
 
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import Badge from "@mui/material/Badge";
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -11,12 +14,22 @@ const Navbar = () => {
           </div>
         </div>
         <div className="center">
-          <h1 className="logo">Shop-INN</h1>
+          <Link to="/" className="logo">
+            <h1> Shop-INN</h1>
+          </Link>
         </div>
         <div className="right">
-          <div className="menuitem">REGISTER</div>
-          <div className="menuitem">SING IN</div>
-          <div className="menuitem"></div>
+          <Link to="/register" className="menuitem">
+            REGISTER
+          </Link>
+          <Link to="/login" className="menuitem">
+            SING IN
+          </Link>
+          <Link to="/cart" className="menuitem">
+            <Badge badgeContent={4} color="primary">
+              <ShoppingCartOutlinedIcon />
+            </Badge>
+          </Link>
         </div>
       </div>
     </div>
